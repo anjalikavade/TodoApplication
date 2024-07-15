@@ -14,7 +14,9 @@ body {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 500px;
+  width: 90%; /* Adjusted for responsiveness */
+  max-width: 500px; /* Max width for larger screens */
+  margin: auto; /* Center align */
 }
 
 h1 {
@@ -23,28 +25,27 @@ h1 {
 
 .input-group {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: center;
+  gap: 10px; /* Spacing between elements */
 }
 
 input[type="text"] {
-  width: 70%;
+  flex: 1; /* Take remaining space */
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
-button {
+button#add-task {
   padding: 10px;
   border: none;
   background-color: #007BFF;
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  width: max-content;
 }
 
-button:hover {
+button#add-task:hover {
   background-color: #0056b3;
 }
 
@@ -93,4 +94,8 @@ li .button-group {
   padding: 0 10px;
   cursor: pointer;
   height: 30px;
+}
+
+.done-btn:hover {
+  background-color: rgb(35, 150, 34);
 }
