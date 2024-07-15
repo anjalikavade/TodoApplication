@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note it Down</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="intro">
+          <h3 id ="click" onclick='show_notes_container()'>Hey Hi! click here</h3>
+    </div>
+    <div class="container" id="notes_container">
+        <h1>Sirf likna nahi complete bhi karna! :)</h1>
+        <div class="input-group">
+            <input type="text" id="new-task" placeholder="Add a new task">
+            <button id="add-task" onclick='addTask()'>Add</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
