@@ -22,3 +22,11 @@
     </script>
 </body>
 </html>
+1.docker pull jasonrivers/nagios:latest
+2.docker run --name nagiosdemo -p 8888:80 jasonrivers/nagios:latest
+3.Site: http://localhost:8888
+4.Username: nagiosadmin
+Password: nagios
+5.docker stop nagiosdemo
+6.docker rm nagiosdemo
+7.docker rmi jasonrivers/nagios:latest
